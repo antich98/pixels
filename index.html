@@ -1,0 +1,2453 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="grupo_2" />
+    <meta
+      name="description"
+      content="Servicio de series y películas vía streaming"
+    />
+    <meta
+      name="keywords"
+      content="prime, películas, series, amazon, streaming"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Pixels</title>
+    <link rel="icon" href="./img/logo/icon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navegation navbar-dark">
+        <div class="container">
+          <a class="navbar-brand navbar-logo" href="./index.html"
+            ><img src="./img/logo/cover_white.png" alt="Logo" class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./pages/error404.html" class="nav-link">Series</a>
+              </li>
+              <li class="nav-item">
+                <a href="./pages/error404.html" class="nav-link">Películas</a>
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="border-0 bg-transparent nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar Sesión
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/suscripcion.html"
+                  >Suscribirse</a
+                >
+              </li>
+            </ul>
+            <form action="./pages/error404.html" class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                maxlength="25"
+              />
+              <button type="submit" class="btn btn-outline-light">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-mirage">
+      <section
+        id="carouselControls"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <article class="carousel-item active carousel-size text-light">
+            <div class="position-relative">
+              <img
+                src="./img/principal/cover1.jpg"
+                alt="slider1"
+                class="cover object-position-top"
+              />
+              <div class="position-absolute slider-info overinfo-size ps-4">
+                <div class="logo-width mb-2">
+                  <img
+                    src="./img/principal/logo1.png"
+                    alt="logo slider 1"
+                    class="w-100"
+                  />
+                </div>
+                <h3>The Walking Dead - T11</h3>
+                <p class="d-none d-md-block">
+                  Tras ganar la batalla contra los Susurradores, los
+                  supervivientes recuperan fuerzas antes de que llegue la nueva
+                  amenaza. Maggie ha vuelto al grupo con su hijo.
+                </p>
+                <a href="./pages/error404.html" class="btn btn-prime me-3">
+                  <i class="bi bi-play-fill"></i>
+                  Ver
+                </a>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-outline-secondary"
+                >
+                  <i class="bi bi-collection-play"></i>
+                  Añadir
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="carousel-item carousel-size text-light">
+            <div class="position-relative">
+              <img
+                src="./img/principal/cover2.jpg"
+                alt="slider2"
+                class="cover object-position-top"
+              />
+              <div class="position-absolute slider-info overinfo-size ps-4">
+                <div class="logo-width mb-2">
+                  <img
+                    src="./img/principal/logo2.webp"
+                    alt="logo slider 2"
+                    class="w-100"
+                  />
+                </div>
+                <h3>The 100 - T1</h3>
+                <p class="d-none d-md-block">
+                  Luego de 97 años de un apocalipsis nuclear, 100 personas son
+                  llevadas a la tierra para comprobar si ya era habitable, sin
+                  saber que les esperaría.
+                </p>
+                <a href="./pages/error404.html" class="btn btn-prime me-3">
+                  <i class="bi bi-play-fill"></i>
+                  Ver
+                </a>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-outline-secondary"
+                >
+                  <i class="bi bi-collection-play"></i>
+                  Añadir
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="carousel-item carousel-size text-light">
+            <div class="position-relative">
+              <img
+                src="./img/principal/cover3.jpg"
+                alt="slider3"
+                class="cover object-position-top"
+              />
+              <div class="position-absolute slider-info overinfo-size ps-4">
+                <div class="logo-width mb-2">
+                  <img
+                    src="./img/principal/logo3.png"
+                    alt="logo slider 3"
+                    class="w-100"
+                  />
+                </div>
+                <h3>Breaking Bad - T5</h3>
+                <p class="d-none d-md-block">
+                  Walt regresa a casa después de matar a Gustavo Fring, se
+                  deshace de cualquier cosa que lo vincule a su exitoso complot
+                  contra Gus y luego esconde el ricino que le robó a Jesse
+                  Pinkman.
+                </p>
+                <a href="./pages/error404.html" class="btn btn-prime me-3">
+                  <i class="bi bi-play-fill"></i>
+                  Ver
+                </a>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-outline-secondary"
+                >
+                  <i class="bi bi-collection-play"></i>
+                  Añadir
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="carousel-item carousel-size text-light">
+            <div class="position-relative">
+              <div class="position-static">
+                <img
+                  src="./img/principal/cover4.jpg"
+                  alt="slider4"
+                  class="cover object-position-center"
+                />
+              </div>
+              <div class="position-absolute slider-info overinfo-size ps-4">
+                <div class="logo-width mb-2">
+                  <img
+                    src="./img/principal/logo4.png"
+                    alt="logo slider 4"
+                    class="w-100"
+                  />
+                </div>
+                <h3>Prison Break - T1</h3>
+                <p class="d-none d-md-block">
+                  Michael Scofield en un elaborado plan para rescatar a su
+                  hermanastro Lincoln Burrows, entra a "Fox River" una cárcel de
+                  máxima seguridad, para sacar a su hermano acusado por un falso
+                  asesinato del hermano de la vicepresidenta.
+                </p>
+                <a href="./pages/error404.html" class="btn btn-prime me-3">
+                  <i class="bi bi-play-fill"></i>
+                  Ver
+                </a>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-outline-secondary"
+                >
+                  <i class="bi bi-collection-play"></i>
+                  Añadir
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="carousel-item carousel-size text-light">
+            <div class="position-relative">
+              <img
+                src="./img/principal/cover5.jpg"
+                alt="slider5"
+                class="cover object-position-top"
+              />
+              <div class="position-absolute slider-info overinfo-size ps-4">
+                <div class="logo-width mb-2">
+                  <img
+                    src="./img//principal/logo5.png"
+                    alt="logo slider 5"
+                    class="w-100"
+                  />
+                </div>
+                <h3>Cyberpunk: Edgerunners - T1</h3>
+                <p class="d-none d-md-block">
+                  La historia nos lleva a la vida cotidiana de un niño de la
+                  calle que intenta sobrevivir en una ciudad con tecnologías y
+                  modificaciones corporales. Para mantenerse con vida, decide
+                  convertirse en un edgerunner, un mercenario también conocido
+                  como cyberpunk.
+                </p>
+                <a
+                  href="./pages/peliculas_series/Cyberpunk.html"
+                  class="btn btn-prime me-3"
+                >
+                  <i class="bi bi-play-fill"></i>
+                  Ver
+                </a>
+                <a
+                  href="./pages/error404.html"
+                  class="btn btn-outline-secondary"
+                >
+                  <i class="bi bi-collection-play"></i>
+                  Añadir
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <div class="d-none d-md-block">
+        <section class="text-light mb-4 mt-5">
+          <article class="container">
+            <h3>Tendencias</h3>
+          </article>
+          <article id="tendenciasCarousel" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/dragon-ball.jpg"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/blacklist.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/the100.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/breaking-bad.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/peliculas_series/ElViajeDeChihiro.html">
+                      <img
+                        src="./img/portadas_peliculas_series/ElViajedeChihiro.jpg"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0taxi-driver.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/gotham.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1parasite.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0volver-futuro.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#tendenciasCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#tendenciasCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Últimos lanzamientos</h3>
+          </article>
+          <article
+            id="lanzamientosCarousel"
+            class="carousel slide itemsCarousel"
+          >
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1busca-felicidad.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1demon-slayer.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1naruto-shipudden.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1parasite.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1rebelde-way.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1spiderman-lejosdecasa.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1titanes.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1topgun.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1viven.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#lanzamientosCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#lanzamientosCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Seguir viendo</h3>
+          </article>
+          <article id="reanudarCarousel" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/better-saul.jpg"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="37"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 37%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/01917.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="17"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 17%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0amazing-spiderman.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 70%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/ley-audaces.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/flash.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 10%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0bohemian.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="65"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 65%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0eminem.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="47"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 47%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/naruto.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="81"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 81%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/the100.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="16"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 16%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#reanudarCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#reanudarCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Para vos</h3>
+          </article>
+          <article id="foryouCarousel" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/vikingos.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0forest-gump.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/pablo-escobar.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0gladiador.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/breaking-bad.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/avatar.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0godfather.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0juegos-hambre.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0spiderman3.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#foryouCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#foryouCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+      </div>
+      <div class="d-md-none">
+        <section class="text-light mb-4 mt-5">
+          <article class="container">
+            <h3>Tendencias</h3>
+          </article>
+          <article
+            id="tendenciasCarouselsm"
+            class="carousel slide itemsCarousel"
+          >
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/dragon-ball.jpg"
+                        alt="portada dragon ball"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/blacklist.webp"
+                        alt="portada blacklist"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/the100.webp"
+                        alt="portada the 100"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/breaking-bad.webp"
+                        alt="portada breaking bad"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/the-walking-dead.webp"
+                        alt="portada walking dead"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0taxi-driver.webp"
+                        alt="portada taxi driver"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/gotham.webp"
+                        alt="portada gotham"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1parasite.webp"
+                        alt="portada parasite"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0volver-futuro.webp"
+                        alt="portada volver al futuro"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#tendenciasCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#tendenciasCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Últimos lanzamientos</h3>
+          </article>
+          <article
+            id="lanzamientosCarouselsm"
+            class="carousel slide itemsCarousel"
+          >
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1busca-felicidad.webp"
+                        alt="portada busca de la felicidad"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1demon-slayer.webp"
+                        alt="portada demon slayer"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1naruto-shipudden.webp"
+                        alt="portada naruto shipudden"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1parasite.webp"
+                        alt="portada parasite"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1rebelde-way.webp"
+                        alt="portada rebelde way"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1spiderman-lejosdecasa.webp"
+                        alt="portada spiderman no way home"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1titanes.webp"
+                        alt="portada teen titans"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1topgun.webp"
+                        alt="portada top gun"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/1viven.webp"
+                        alt="portada viven"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#lanzamientosCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#lanzamientosCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Seguir viendo</h3>
+          </article>
+          <article id="reanudarCarouselsm" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/better-saul.jpg"
+                        alt="portada better call saul"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="37"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 37%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/01917.webp"
+                        alt="portada 1917"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="17"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 17%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0amazing-spiderman.webp"
+                        alt="portada amazing spiderman"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 70%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/ley-audaces.webp"
+                        alt="portada ley de audaces"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 90%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/flash.webp"
+                        alt="portada flash"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 10%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0bohemian.webp"
+                        alt="portada bohemian rhapsody"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="65"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 65%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0eminem.webp"
+                        alt="portada 8 miles"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="47"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 47%"
+                      ></div>
+                    </div>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/naruto.webp"
+                        alt="portada naruto"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="81"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 81%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/the100.webp"
+                        alt="portada the 100"
+                        class="cardImg"
+                      />
+                    </a>
+                    <div
+                      class="progress"
+                      role="progressbar"
+                      aria-label="bar"
+                      aria-valuenow="16"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    >
+                      <div
+                        class="progress-bar bg-bayoux"
+                        style="width: 16%"
+                      ></div>
+                    </div>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#reanudarCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#reanudarCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Para vos</h3>
+          </article>
+          <article id="foryouCarouselsm" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/vikingos.webp"
+                        alt="portada vikingos"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0forest-gump.webp"
+                        alt="portada forest gump"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/pablo-escobar.webp"
+                        alt="portada pablo escobar"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0gladiador.webp"
+                        alt="portada gladidor"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/breaking-bad.webp"
+                        alt="portada breaking bad"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/avatar.webp"
+                        alt="portada avatar"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0godfather.webp"
+                        alt="portada el padrino"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0juegos-hambre.webp"
+                        alt="portada juegos del hambre"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0spiderman3.webp"
+                        alt="portada spiderman 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#foryouCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#foryouCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+      </div>
+      <section class="w-100 bg-bayoux text-light my-4 py-4">
+        <div class="container d-flex justify-content-between">
+          <article class="fs-2 lead w-75">
+            <p class="d-inline">Suscribite a</p>
+            <h1 class="d-inline fs-2 fw-bold">Pixels</h1>
+            <p class="d-inline">en un solo click!</p>
+            <p class="fs-5 mt-2">
+              Tus 2 primeros meses completamente gratis por este año nuevo.
+            </p>
+          </article>
+          <article
+            class="w-25 d-none d-md-flex align-items-md-center justify-content-md-end"
+          >
+            <img
+              src="./img/logo/vector/default-monochrome-white.svg"
+              alt="logo pixels"
+              class="img-fluid w-50"
+            />
+          </article>
+        </div>
+        <article class="container">
+          <a
+            href="./pages/suscripcion.html#planes"
+            class="btn btn-outline-light"
+            >Suscribirse</a
+          >
+        </article>
+      </section>
+      <div class="d-none d-md-block">
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Series</h3>
+          </article>
+          <article id="seriesCarousel" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/avatar.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/better-saul.jpg"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/brookling99.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/dragon-ball.jpg"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/flash.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/formula1.jpg"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/ley-audaces.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/naruto.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/okupas.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#seriesCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#seriesCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Películas</h3>
+          </article>
+          <article id="peliculasCarousel" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0volver-futuro.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0transformers.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0taxi-driver.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0spiderman3.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0godfather.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0forest-gump.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0bohemian.webp"
+                        alt="portada card 2"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/01917.webp"
+                        alt="portada card 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0eminem.webp"
+                        alt="portada card 1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#peliculasCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#peliculasCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+      </div>
+      <div class="d-md-none">
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Series</h3>
+          </article>
+          <article id="seriesCarouselsm" class="carousel slide itemsCarousel">
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/avatar.webp"
+                        alt="portada avatar"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/better-saul.jpg"
+                        alt="portada better call saul"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/brookling99.webp"
+                        alt="portada brookling99"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/dragon-ball.jpg"
+                        alt="portada dragon ball"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/flash.webp"
+                        alt="portada flash"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/formula1.jpg"
+                        alt="portada formula1"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/ley-audaces.webp"
+                        alt="portada ley de audaces"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/naruto.webp"
+                        alt="portada naruto"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/okupas.webp"
+                        alt="portada okupas"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#seriesCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#seriesCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+        <section class="text-light my-4">
+          <article class="container">
+            <h3>Películas</h3>
+          </article>
+          <article
+            id="peliculasCarouselsm"
+            class="carousel slide itemsCarousel"
+          >
+            <div class="carousel-inner container">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0volver-futuro.webp"
+                        alt="portada volver al futuro"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0transformers.webp"
+                        alt="portada transformers"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0taxi-driver.webp"
+                        alt="portada taxi driver"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0spiderman3.webp"
+                        alt="portada spiderman 3"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0godfather.webp"
+                        alt="portada el padrino"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0forest-gump.webp"
+                        alt="portada forest gump"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0bohemian.webp"
+                        alt="portada bohemian rhapsody"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/01917.webp"
+                        alt="portada 1917"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <aside class="cardCarousel">
+                    <a href="./pages/error404.html">
+                      <img
+                        src="./img/principal/cards/0eminem.webp"
+                        alt="portada 8 miles"
+                        class="cardImg"
+                      />
+                    </a>
+                  </aside>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#peliculasCarouselsm"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#peliculasCarouselsm"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </article>
+        </section>
+      </div>
+      <section class="container text-light mb-4">
+        <h3>Categorías</h3>
+        <div class="row justify-content-center">
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/categorias/comedia.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/comedy.png"
+                    alt="imagen comedia"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Comedia</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/action.png"
+                    alt="imagen accion"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Accion</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/categorias/cienciaFiccion.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/scifi.png"
+                    alt="imagen ciencia ficcion"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Ciencia Ficcion</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/drama.png"
+                    alt="imagen drama"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Drama</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/fantasy.png"
+                    alt="imagen fantasía"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Fantasía</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/horror.png"
+                    alt="imagen terror"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Terror</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/documental.png"
+                    alt="imagen documentales"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Documentales</h4>
+              </div>
+            </a>
+          </aside>
+          <aside class="col-md-4 col-lg-3 my-2 category">
+            <a
+              href="./pages/error404.html"
+              class="text-light text-decoration-none"
+            >
+              <div
+                class="bg-bayoux rounded h-100 d-flex flex-md-column justify-content-evenly align-items-center"
+              >
+                <article class="w-25">
+                  <img
+                    src="./img/principal/biopic.png"
+                    alt="imagen biopic"
+                    class="img-fluid"
+                  />
+                </article>
+                <h4 class="fs-5">Biopic</h4>
+              </div>
+            </a>
+          </aside>
+        </div>
+      </section>
+      <section
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-mirage px-3 py-2">
+            <div class="modal-header">
+              <h1 class="display-6 text-white">Iniciar Sesión</h1>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="./pages/error404.html" class="text-white">
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Usuario</label
+                  >
+                  <input
+                    type="text"
+                    required
+                    class="form-control"
+                    minlength="5"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    required
+                    class="form-control"
+                    minlength="8"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <button type="submit" class="btn bg-dark text-light w-100">
+                  Ingresar
+                </button>
+                <input
+                  class="my-4"
+                  type="checkbox"
+                  value="azul"
+                  name="coloresRGB"
+                />
+                <label>Recordarme</label>
+                <br />
+                <a class="text-end" href="./pages/error404.html"
+                  >¿Olvidaste tu contraseña?</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-secondary py-5">
+      <section class="container">
+        <div class="row">
+          <aside class="col-lg-4 mb-4 d-flex flex-lg-column align-items-center">
+            <a href="./index.html"
+              ><img
+                src="./img/logo/cover_white.png"
+                alt="imagen logotipo"
+                class="w-125px"
+            /></a>
+            <div class="ms-3 my-lg-3 ms-lg-0">
+              <a href="./pages/error404.html"
+                ><i class="bi bi-facebook text-secondary"></i
+              ></a>
+              <a href="./pages/error404.html"
+                ><i class="bi bi-twitter text-secondary mx-2"></i
+              ></a>
+              <a href="./pages/error404.html"
+                ><i class="bi bi-instagram text-secondary"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >FAQ</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Privacidad</a
+            >
+            <a
+              href="./pages/nosotros.html"
+              class="text-decoration-none text-secondary d-block"
+              >Nosotros</a
+            >
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./pages/contacto.html"
+              class="text-decoration-none text-secondary d-block"
+              >Contactanos</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Terminos y condiciones</a
+            >
+            <a
+              href="./pages/error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >Ayuda</a
+            >
+          </aside>
+          <aside class="text-md-center mt-3">
+            <p>&copy;2023 Todos los derechos reservados</p>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

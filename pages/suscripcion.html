@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="grupo_2" />
+    <meta
+      name="description"
+      content="Servicio de series y películas vía streaming"
+    />
+    <meta
+      name="keywords"
+      content="prime, películas, series, amazon, streaming"
+    />
+    <title>Pixels</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/logo/icon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navegation navbar-dark">
+        <div class="container">
+          <a class="navbar-brand navbar-logo" href="../index.html"
+            ><img
+              src="../img/logo/cover_white.png"
+              alt="Logo"
+              class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="border-0 bg-transparent nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar Sesión
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./suscripcion.html"
+                  >Suscribirse</a
+                >
+              </li>
+            </ul>
+            <form action="./error404.html" class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                maxlength="25"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="bg-img-suscripcion py-5">
+        <article class="container">
+          <h2 class="fs-0 fw-bold">Mirá tus series favoritas</h2>
+          <p class="fs-4">
+            Disfrutá de tus 2 primeros meses completamente GRATIS por este año
+            nuevo.
+          </p>
+          <a href="#planes" class="btn btn-prime btn-resize my-5">Ver planes</a>
+          <p>Promoción válida hasta el 15/01/23.</p>
+          <p>Podés cancelar tu suscripción cuando quieras.*</p>
+        </article>
+      </section>
+      <section class="w-100 py-5" id="planes">
+        <div class="container">
+          <article class="text-center pt-4">
+            <h1>Elige el mejor plan para ti</h1>
+            <p class="lead fs-6">Disfruta de las mejores series y películas</p>
+          </article>
+          <form action="./error404.html">
+            <article class="text-center mt-5 mb-3">
+              <div
+                class="btn-group radio-planes"
+                role="planSelector"
+                aria-label="Basic radio toggle button group"
+              >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btn1mes"
+                  autocomplete="off"
+                  value="1"
+                />
+                <label
+                  class="btn btn-outline-prime px-4 radio-plan"
+                  for="btn1mes"
+                  >1 mes</label
+                >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btn3meses"
+                  autocomplete="off"
+                  value="3"
+                  required
+                />
+                <label
+                  class="btn btn-outline-prime px-4 radio-plan"
+                  for="btn3meses"
+                  >3 meses</label
+                >
+                <input
+                  type="radio"
+                  class="btn-check"
+                  name="btnradio"
+                  id="btn6meses"
+                  autocomplete="off"
+                  value="6"
+                />
+                <label
+                  class="btn btn-outline-prime px-4 radio-plan"
+                  for="btn6meses"
+                  >6 meses</label
+                >
+              </div>
+            </article>
+            <article class="row justify-content-evenly">
+              <aside class="col-md-6 col-lg-4 mb-3">
+                <article class="card card-suscripcion">
+                  <div class="card-body">
+                    <h5>Básico</h5>
+                    <p>$699,00/mes</p>
+                    <ul class="">
+                      <li class="">Calidad HD</li>
+                      <li class="">Sin anuncios</li>
+                      <li class="">Descarga en 1 dispositivo</li>
+                      <li class="">Películas y series sin límites</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">1 dispositivo a la vez</p>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradioplan"
+                      id="btnPlanA"
+                      autocomplete="off"
+                      value="1"
+                    />
+                    <label
+                      class="btn btn-outline-prime px-4 btn-smaller"
+                      for="btnPlanA"
+                      >Elegir plan</label
+                    >
+                  </div>
+                </article>
+              </aside>
+              <aside class="col-md-6 col-lg-4 mb-3">
+                <article class="card card-suscripcion">
+                  <div class="card-body">
+                    <h5>Estándar</h5>
+                    <p>$1299,00/mes</p>
+                    <ul class="">
+                      <li class="">Calidad Full HD</li>
+                      <li class="">Sin anuncios</li>
+                      <li class="">Descarga en 2 dispositivos</li>
+                      <li class="">Películas y series sin límites</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">2 dispositivos a la vez</p>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradioplan"
+                      id="btnPlanB"
+                      autocomplete="off"
+                      value="2"
+                      required
+                    />
+                    <label
+                      class="btn btn-outline-prime px-4 btn-smaller"
+                      for="btnPlanB"
+                      >Elegir plan</label
+                    >
+                  </div>
+                </article>
+              </aside>
+              <aside class="col-md-6 col-lg-4 mb-3 mt-md-4 mt-lg-0">
+                <article class="card card-suscripcion">
+                  <div class="card-body">
+                    <h5>Premium</h5>
+                    <p>$1899,00/mes</p>
+                    <ul class="">
+                      <li class="">Calidad HD</li>
+                      <li class="">Sin anuncios</li>
+                      <li class="">Descarga en 4 dispositivos</li>
+                      <li class="">Películas y series sin límites</li>
+                    </ul>
+                  </div>
+                  <div class="card-footer">
+                    <p class="card-text">4 dispositivos a la vez</p>
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="btnradioplan"
+                      id="btnPlanC"
+                      autocomplete="off"
+                      value="3"
+                    />
+                    <label
+                      class="btn btn-outline-prime px-4 btn-smaller"
+                      for="btnPlanC"
+                      >Elegir plan</label
+                    >
+                  </div>
+                </article>
+              </aside>
+            </article>
+            <article>
+              <div class="card p-3">
+                <div class="mb-4">
+                  <label for="nombre" class="form-label">Nombre:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Juan Luis"
+                    id="nombre"
+                    required
+                    minlength="2"
+                    maxlength="35"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="apellido" class="form-label">Apellido:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Pérez"
+                    id="apellido"
+                    required
+                    minlength="3"
+                    maxlength="35"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="form-label">Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="ejemplo@mail.com"
+                    required
+                    maxlength="55"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="username" class="form-label">Nombre de usuario:</label>
+                  <input
+                    type="text"
+                    required
+                    class="form-control"
+                    minlength="5"
+                    maxlength="40"
+                    id="username"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label">Contraseña:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    required
+                    minlength="8"
+                    maxlength="20"
+                    aria-describedby="passwordHelpBlock"
+                  />
+                  <div id="passwordHelpBlock" class="form-text">
+                    La contraseña debe tener entre 8-20 caracteres de largo.
+                  </div>
+                </div>
+                <div class="form-check form-switch mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    required
+                    id="switchTerminosCondiciones"
+                  />
+                  <label
+                    class="form-check-label"
+                    for="switchTerminosCondiciones"
+                    >He leído y acepto los términos y condiciones.</label
+                  >
+                </div>
+                <div class="mb-4">
+                  <button type="submit" class="btn btn-prime btn-smaller">
+                    Suscribirse
+                  </button>
+                </div>
+              </div>
+            </article>
+          </form>
+        </div>
+      </section>
+      <section
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-mirage px-3 py-2">
+            <div class="modal-header">
+              <h1 class="display-6 text-white">Iniciar Sesión</h1>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="./error404.html" class="text-white">
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Usuario</label
+                  >
+                  <input
+                    type="text"
+                    required
+                    class="form-control"
+                    minlength="5"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    required
+                    class="form-control"
+                    minlength="8"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <button type="submit" class="btn bg-dark text-light w-100">
+                  Ingresar
+                </button>
+                <input
+                  class="my-4"
+                  type="checkbox"
+                  value="azul"
+                  name="coloresRGB"
+                />
+                <label>Recordarme</label>
+                <br />
+                <a class="text-end" href="./error404.html"
+                  >¿Olvidaste tu contraseña?</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-secondary py-5">
+      <section class="container">
+        <div class="row">
+          <aside class="col-lg-4 mb-4 d-flex flex-lg-column align-items-center">
+            <a href="../index.html"
+              ><img
+                src="../img/logo/cover_white.png"
+                alt="imagen logotipo"
+                class="w-125px"
+            /></a>
+            <div class="ms-3 my-lg-3 ms-lg-0">
+              <a href="./error404.html"
+                ><i class="bi bi-facebook text-secondary"></i
+              ></a>
+              <a href="./error404.html"
+                ><i class="bi bi-twitter text-secondary mx-2"></i
+              ></a>
+              <a href="./error404.html"
+                ><i class="bi bi-instagram text-secondary"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >FAQ</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Privacidad</a
+            >
+            <a
+              href="./nosotros.html"
+              class="text-decoration-none text-secondary d-block"
+              >Nosotros</a
+            >
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./contacto.html"
+              class="text-decoration-none text-secondary d-block"
+              >Contactanos</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Terminos y condiciones</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >Ayuda</a
+            >
+          </aside>
+          <aside class="text-md-center mt-3">
+            <p>&copy;2023 Todos los derechos reservados</p>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

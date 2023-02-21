@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="grupo_2" />
+    <meta
+      name="description"
+      content="Servicio de series y películas vía streaming"
+    />
+    <meta
+      name="keywords"
+      content="prime, películas, series, amazon, streaming"
+    />
+    <title>Pixels</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../img/logo/icon.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navegation navbar-dark">
+        <div class="container">
+          <a class="navbar-brand navbar-logo" href="../index.html"
+            ><img
+              src="../img/logo/cover_white.png"
+              alt="Logo"
+              class="img-fluid"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <button
+                  type="button"
+                  class="border-0 bg-transparent nav-link"
+                  data-bs-toggle="modal"
+                  data-bs-target="#loginModal"
+                >
+                  Iniciar Sesión
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./suscripcion.html">Suscribirse</a>
+              </li>
+            </ul>
+            <form action="./error404.html" class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                maxlength="25"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-nosotros">
+      <section class="container text-light text-center">
+        <h1 class="text-center display-1 py-5">Nuestro propósito</h1>
+        <h3 class="text-center lead">
+          Pixel tiene como objetivo llevar lo mejor de la pantalla grande a la
+          comodidad del hogar. Por eso mismo, traemos las mejores series y
+          películas, y buscamos generar una experiencia inolvidable. Pixel nació
+          como un proyecto entre cuatro amigos, que buscaban un servicio con una
+          tarifa justa y una amplia variedad.
+        </h3>
+        <img
+          src="../img/sobreNosotros.jpg"
+          class="py-4 img-fluid"
+          alt="Puños chocando"
+        />
+      </section>
+      <section class="container my-5 text-light">
+        <article class="d-md-flex text-center text-md-start">
+          <img
+            src="../img/diegoVacaAvatar.svg"
+            alt="Diego"
+            class="w-25 rounded-4 filtroCategorias"
+          />
+          <aside
+            class="d-flex justify-content-center align-items-center w-nosotrosNombre mt-3 mt-md-0"
+          >
+            <h4 class="display-5">Diego Vaca Paz</h4>
+          </aside>
+        </article>
+        <article
+          class="d-md-flex my-5 flex-md-row-reverse text-center text-md-start"
+        >
+          <img
+            src="../img/santiagoAntichAvatar.svg"
+            alt="Santiago"
+            class="w-25 rounded-4 filtroCategorias"
+          />
+          <aside
+            class="d-flex justify-content-center align-items-center w-nosotrosNombre mt-3 mt-md-0"
+          >
+            <h4 class="display-5">Santiago Antich</h4>
+          </aside>
+        </article>
+        <article class="d-md-flex my-5 text-center text-md-start">
+          <img
+            src="../img/AvatarCarabajalFacundo.png"
+            alt="Facundo"
+            class="w-25 rounded-4 filtroCategorias"
+          />
+          <aside
+            class="d-flex justify-content-center align-items-center w-nosotrosNombre mt-3 mt-md-0"
+          >
+            <h4 class="display-5">Facundo Carabajal</h4>
+          </aside>
+        </article>
+        <article
+          class="d-md-flex flex-md-row-reverse text-center text-md-start"
+        >
+          <img
+            src="../img/AvatarExequielSanchez.jpeg"
+            alt="Exequiel"
+            class="w-25 rounded-4 filtroCategorias"
+          />
+          <aside
+            class="d-flex justify-content-center align-items-center w-nosotrosNombre mt-3 mt-md-0"
+          >
+            <h4 class="display-5">Exequiel Sanchez</h4>
+          </aside>
+        </article>
+      </section>
+      <section
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        aria-labelledby="loginModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-mirage px-3 py-2">
+            <div class="modal-header">
+              <h1 class="display-6 text-white">Iniciar Sesión</h1>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="./pages/error404.html" class="text-white">
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Usuario</label
+                  >
+                  <input
+                    type="text"
+                    required
+                    class="form-control"
+                    minlength="5"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contactoFormControlInput1" class="form-label"
+                    >Contraseña</label
+                  >
+                  <input
+                    type="password"
+                    required
+                    class="form-control"
+                    minlength="8"
+                    maxlength="40"
+                    id="contactoFormControlInput1"
+                  />
+                </div>
+                <button type="submit" class="btn bg-dark text-light w-100">
+                  Ingresar
+                </button>
+                <input
+                  class="my-4"
+                  type="checkbox"
+                  value="azul"
+                  name="coloresRGB"
+                />
+                <label>Recordarme</label>
+                <br />
+                <a class="text-end" href="./error404.html"
+                  >¿Olvidaste tu contraseña?</a
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-secondary py-5">
+      <section class="container">
+        <div class="row">
+          <aside class="col-lg-4 mb-4 d-flex flex-lg-column align-items-center">
+            <a href="../index.html"
+              ><img
+                src="../img/logo/cover_white.png"
+                alt="imagen logotipo"
+                class="w-125px"
+            /></a>
+            <div class="ms-3 my-lg-3 ms-lg-0">
+              <a href="./error404.html"
+                ><i class="bi bi-facebook text-secondary"></i
+              ></a>
+              <a href="./error404.html"
+                ><i class="bi bi-twitter text-secondary mx-2"></i
+              ></a>
+              <a href="./error404.html"
+                ><i class="bi bi-instagram text-secondary"></i
+              ></a>
+            </div>
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >FAQ</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Privacidad</a
+            >
+            <a
+              href="./nosotros.html"
+              class="text-decoration-none text-secondary d-block"
+              >Nosotros</a
+            >
+          </aside>
+          <aside class="col-md-6 col-lg-4 mb-3">
+            <a
+              href="./contacto.html"
+              class="text-decoration-none text-secondary d-block"
+              >Contactanos</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block my-1"
+              >Terminos y condiciones</a
+            >
+            <a
+              href="./error404.html"
+              class="text-decoration-none text-secondary d-block"
+              >Ayuda</a
+            >
+          </aside>
+          <aside class="text-md-center mt-3">
+            <p>&copy;2023 Todos los derechos reservados</p>
+          </aside>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
